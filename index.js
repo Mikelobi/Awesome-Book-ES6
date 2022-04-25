@@ -58,18 +58,15 @@ const addBookSection = document.querySelector('.bottom-container');
 const contactSection = document.querySelector('.contact');
 const displayBookSection = document.querySelector('.top-container');
 
-
 const date = document.querySelector('.date');
 const dateTime = luxon.DateTime.utc().toLocaleString(luxon.DateTime.DATETIME_FULL);
 date.textContent = dateTime;
-
 
 document.addEventListener('DOMContentLoaded', () => {
   mainPage.populateBooks();
   contactSection.style.display = 'none';
   addBookSection.style.display = 'none';
 });
-
 
 const addButton = document.querySelector('#add-button');
 addButton.addEventListener('click', () => {
